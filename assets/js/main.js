@@ -14,7 +14,7 @@
 		settings = {
 
 			// Parallax background effect?
-				parallax: true,
+				parallax: false,
 
 			// Parallax factor (lower = more intense, higher = less intense).
 				parallaxFactor: 20
@@ -104,7 +104,7 @@
 					overlayOpacity: 0.85,
 					popupCloserText: '',
 					popupLoaderText: '',
-					selector: '.work-item a.image',
+					selector: '.work-item a.image:not(.no-lightbox)',
 					usePopupCaption: true,
 					usePopupDefaultStyling: false,
 					usePopupEasyClose: false,
