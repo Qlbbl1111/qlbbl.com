@@ -9,8 +9,23 @@
         <title>Resume</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/resume.css?version=1" />
+        <link rel="stylesheet" href="assets/css/resume.css?version=17" />
         <link rel="icon" type="image/png" href="images/favicon.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+                jQuery("#resume-body").load("quinn-burke-resume.html");
+            });
+
+            function printDiv(divName) {
+                var printContents = document.getElementById(divName).innerHTML;
+                w=window.open();
+                w.document.write(printContents);
+                w.print();
+                w.close();
+            }
+        </script>
+
     </head>
     <body class="is-preload">
 
@@ -27,121 +42,13 @@
             </header>
 
         <!-- Main -->
-            <div id="main">
+        <div id="resume-body" class="print"></div>
 
-                <!-- One -->
-                        <header class="major">
-                            <h2>Quinn Burke</h2>
-                        </header>
-                        <p>he/him • Los Angeles, California • (818) 317-5270 • <a href="mailto:quinnlburke@icloud.com" target="_blank"> quinnlburke@icloud.com</a></p>
-                    <hr></hr>
-                <!-- Two -->
-                        <h2 class="resume-title">Work Experience</h2>
-
-                            <h3 class="resume">  CHAMPS Yearbook • Los Angeles, CA • 08/2024 - Present Yearbook Editor in Chief </h3>
-                            <ul class="resume"> <li> Lead the 2024 CHAMPS yearbook team alongside our adviser. Helped create team deadlines and keep groups on task. Also delt with communication with parents and helped coordinate miscellaneous needs for the team. </li> </ul>
-
-                            <h3 class="resume"> JABWORKS, LLC • Los Angeles, CA • 02/2022 - Present Rental Assistant </h3>
-                            <ul class="resume"> <li> Prepping rentals and help handling rentals going in and out of the buisness with clients. </li> </ul>
-
-                            <h3 class="resume"> Vllage Arts Theater • Los Angeles, CA • 06/2024 - 08/2024 Live Sound Engineer </h3>
-                            <ul class="resume"> <li> Mixed the sound for Village Art’s Mean Girls Jr. for 6 shows. Did all the console programming and helped with equipment setup and strike. </li> </ul>
-
-                            <h3 class="resume"> CHAMPS Yearbook • Los Angeles, CA • 08/2023 - 05/2024 Yearbook Group Editor </h3>
-                            <ul class="resume"> <li> Lead my yearbook team of me and 3 other members to create layouts, take photos, interview, and write copy for our assigned spreads for the school yearbook. </li> </ul>
-
-                            <h3 class="resume"> Vllage Arts Theater • Los Angeles, CA • 06/2023 - 08/2023 Live Sound Engineer </h3>
-                            <ul class="resume"> <li> Mixed the sound for Village Art’s Bye Bye Birdie Jr. for 6 shows. Did all the console programming and helped with equipment setup and strike. </li> </ul>
-
-                            <h3 class="resume"> CHAMPS Yearbook • Los Angeles, CA • 08/2022 - 05/2023 Yearbook Group Editor </h3>
-                            <ul class="resume"> <li> Lead my yearbook team of me and 2 other members to layout, take photos, interview, and write copy for our assigned spreads for the school yearbook. </li> </ul>
-
-                            <h3 class="resume"> Village Arts Theater • Los Angeles, CA • 06/2022 - 07/2022 Live Sound Engineer </h3>
-                            <ul class="resume"> <li> Mixed the sound for Village Art’s Peter Pan Jr. for 6 shows. Did all the console programming and helped with equipment setup and strike. </li> </ul>
-
-
-                        <h2 class="resume-title"> <br> Education </h2>
-
-                            <h3 class="resume"> CHAMPS Charter High School of the Arts </h3>
-                            <ul class="resume"> <li> High School Diploma • 08/2021 - 06/2025 • GPA: 3.95 Unweighted, 4.08 Weighted</li> </ul>
-
-
-                        <h2 class="resume-title"> <br> Awards </h2>
-
-                            <h3 class="resume"> VEX Robotics Design Award </h3>
-                            <ul class="resume"> <li> January 2025 -  The Design Award recognizes an organized and professional approach to the Engineering Design Process, project and time management, and team organization. </li> </ul>
-
-                            <h3 class="resume"> VEX Robotics Amaze Award </h3>
-                            <ul class="resume"> <li> November 2024 - The Amaze Award recognizes a consistently high-performing and competitive robot. </li> </ul>
-
-                            <h3 class="resume"> Vex Robotics Tournament Champion </h3>
-                            <ul class="resume"> <li> September 2024 - Awarded for winning the 2024 Vex Downy Competition. </li> </ul>
-
-                            <h3 class="resume"> AP Scholar </h3>
-                            <ul class="resume"> <li> July 2024 - Achieved 3 or higher on 3 AP exams. </li> </ul>
-
-                            <h3 class="resume"> LASC Most Spirited Award </h3>
-                            <ul class="resume"> <li> April 2024 </li> </ul>
-
-                            <h3 class="resume"> VEX Robotics Innovate Award </h3>
-                            <ul class="resume"> <li> December 2023 - The Innovate Award recognizes an effective and well documented design process for a novel aspect of the team’s robot design or gameplay strategy. </li> </ul>
-
-                            <h3 class="resume"> VEX Robotics Excellence Award </h3>
-                            <ul class="resume"> <li> October 2023 - The Excellence Award recognizes overall excellence in both the Judged Award and the Performance Award categories. </li> </ul>
-
-                            <h3 class="resume"> Vex Robotics Tournament Champion </h3>
-                            <ul class="resume"> <li> October 2023 - Awarded for winning the 2023 Vex Chaminade Showdown. </li> </ul>
-
-
-                        <h2 class="resume-title"> <br> Athletics </h2>
-
-                            <h3 class="resume"> LASC Club Swimming </h3>
-                            <ul class="resume"> <li> 2015-Present - Year round competive racing and training. Currently training 15 hours per week. </li> </ul>
-
-                            <h3 class="resume"> Athletic Training w/ Personal Trainer </h3>
-                            <ul class="resume"> <li> 2023-Present - Currently 1 hour per week, 2-3 hours per week during the summer. </li> </ul>
-
-
-                        <h2 class="resume-title"> <br> Athletic Achievement </h2>
-                            <h3 class="resume"> 3rd Place 500yd Freestyle LA CIF Championship</h3>
-                            <ul class="resume"> <li> May 2024 </li> </ul>
-
-                            <h3 class="resume"> 6th Place 100yd Butterfly LA CIF Championship </h3>
-                            <ul class="resume"> <li> May 2024 </li> </ul>
-
-
-                        <h2 class="resume-title"> <br> Skills </h2>
-
-                            <ul class="resume"> 
-                                <li> Website Building </li> 
-                                <li> HTML </li> 
-                                <li> Swimming </li> 
-                                <li> Python (Programming Language) </li> 
-                                <li> Linux </li> 
-                                <li> Autodesk Fusion 360 </li> 
-                                <li> MacOS </li> 
-                                <li> Electronics </li> 
-                                <li> Soldering </li> 
-                                <li> C++ </li> 
-                                <li> Photography </li> 
-                                <li> Adobe Lightroom </li> 
-                                <li> Photojournalism </li> 
-                                <li> Digital Photography </li> 
-                                <li> Robotics </li> 
-                                <li> Project Management </li> 
-                                <li> Adobe Photoshop </li> 
-                                <li> Rental Prep </li> 
-                                <li> Sound Equipment </li> 
-                                <li> Sound Design </li> 
-                                <li> Live Sound </li> 
-                                <li> Musical Theatre </li> 
-                            </ul>
-<hr></hr>
+        <div id="main">
             <ul class="actions">
-                <li><a href="/quinn-burke-resume-print" class="button">Print</a></li>
+                <li><a onClick="printDiv('resume-body')" class="button">Print</a></li>
             </ul>
-
-            </div>
+        </div>
 
         <!-- Footer -->
             <footer id="footer">
