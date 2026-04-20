@@ -1,9 +1,6 @@
 name: publish website
 run-name: $publish website
 on: [push]
-
-env:
-  SSH_PRIVATE_KEY: ${{secrets.SSH_KEY}}
   
 jobs:
   update_site:
@@ -13,6 +10,6 @@ jobs:
         uses: D3rHase/ssh-command-action@latest
         with:
           host: ${{ secrets.HOST }}
-          user: ${{ secrets.SSH_PRIVATE_KEY }}
-          private_key: ${{ secrets.PRIVATE_KEY }}
+          user: ${{ secrets.USER }}
+          private_key: ${{ secrets.SSH_KEY }}
           command: ./updateqlbbl.sh
