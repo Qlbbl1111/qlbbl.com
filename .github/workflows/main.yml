@@ -10,4 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Update qlbbl.com"
-        run: ssh -i $SSH_PRIVATE_KEY ubuntu@146.235.219.210 "./updateqlbbl.sh"
+        uses: D3rHase/ssh-command-action@latest
+        with:
+          host: ${{ secrets.HOST }}
+          user: ${{ secrets.SSH_PRIVATE_KEY }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+          command: ./updateqlbbl.sh
