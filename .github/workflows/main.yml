@@ -1,0 +1,13 @@
+name: publish website
+run-name: $publish website
+on: [push]
+
+env:
+  SSH_PRIVATE_KEY: ${{secrets.SSH_KEY}}
+  
+jobs:
+  update_site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Update qlbbl.com"
+        run: ssh -i $SSH_PRIVATE_KEY ubuntu@146.235.219.210 "./updateqlbbl.sh"
