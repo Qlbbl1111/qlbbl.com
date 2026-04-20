@@ -12,5 +12,4 @@ jobs:
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USER }}
           private_key: ${{ secrets.SSH_KEY }}
-          host_fingerprint: ${{ secrets.HOST_FINGERPRINT }}
-          command: ./updateqlbbl.sh
+          command: ./update_qlbbl.sh
